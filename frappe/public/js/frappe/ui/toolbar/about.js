@@ -1,19 +1,14 @@
 frappe.provide('frappe.ui.misc');
 frappe.ui.misc.about = function() {
 	if(!frappe.ui.misc.about_dialog) {
-		var d = new frappe.ui.Dialog({title: __('Frappe Framework')})
+		var d = new frappe.ui.Dialog({title: __('RECiPHER BiS')})
 
 		$(d.body).html(repl("<div>\
-		<p>"+__("Open Source Applications for the Web")+"</p>  \
-		<p><i class='icon-globe icon-fixed-width'></i>\
-			 Website: <a href='https://frappe.io' target='_blank'>https://frappe.io</a></p>\
-	 	<p><i class='icon-github icon-fixed-width'></i>\
-			Source: <a href='https://github.com/frappe' target='_blank'>https://github.com/frappe</a></p>\
+		<p>RECiPHER GROUP is a Melbourne based iT Organisation deploying and supporting customized Enterprise Resource and Planning (ERP) Solutions for the SME Market in Australia and New Zealand.</p>\
+		<p>Powered by ERPNext, RECiPHER Business Intelligence Solutions are the perfect solution for Australian Businesses. With solutions tailored to a number of industries including Retail, Distribution, Manufacturing and Professional Services, our Team of Developers and Business Analysts can assist your Company in migrating from multiple disjointed systems to a single application.</p>\
+		<p>RECiPHER BiS is the solution for Businesses that require the same features provided by Netsuite, SAP and XERO, yet wish to minimise associated costs! </p>\
+		<p>Simply SEND US A INQUIRY for more information in relation to RECiPHER BiS or to start your FREE 30 DAY TRIAL! </p>\
 		<hr>\
-		<h4>Installed Apps</h4>\
-		<div id='about-app-versions'>Loading versions...</div>\
-		<hr>\
-		<p class='text-muted'>&copy; 2015 Frappe Technologies Pvt. Ltd and contributors </p> \
 		</div>", frappe.app));
 
 		frappe.ui.misc.about_dialog = d;
